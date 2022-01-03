@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="/css/index.css">
+
+    <title></title>
+  </head>
+  <body id="body">
+    <section>
+      <form method="post">
+        <label for="city" class="col-sm-2 col-form-label">Entrez une ville</label>
+        <input type="text" class="form-control" name="city" />
+        <input type="submit" class="btn btn-primary" value="Envoyer" />
+      </form>
+      <p><%= temp %></p>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <script>
+    VANTA.CLOUDS({
+      el: "#body",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00
+    })
+  </script>
+</html>
