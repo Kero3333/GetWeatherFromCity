@@ -1,0 +1,25 @@
+:root {
+	--navbarHeight: 64px;
+	
+	--blue: rgb(32, 32, 124);
+	--hoveredBlue: rgb(43, 43, 161);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	list-style: none;
+	color: inherit;
+	text-decoration: inherit;
+	font-size: 1.6rem;
+	font-family: "Helvetica", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	min-height: 100vh;
+}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2.4rem;}

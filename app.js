@@ -18,7 +18,7 @@ app.post("/", async (req, res) => {
   } else {
     console.log(temp);
     res.render("index", {
-      temp: `La température de la ville de ${temp.city} est de ${temp.temp}°C`,
+      temp: `The temperature of ${temp.city} is ${temp.temp}°C`,
     });
   }
 });
@@ -26,6 +26,13 @@ app.post("/", async (req, res) => {
 app.get("/", (req, res) => {
   res.render("index", { temp: "" });
 });
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });

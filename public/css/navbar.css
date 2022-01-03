@@ -1,0 +1,40 @@
+header{
+    background-color: var(--blue);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--navbarHeight);
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.333333%;
+    color: #fefefe;
+}
+
+header nav li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header nav li a:hover{
+    background-color: var(--hoveredBlue);
+}

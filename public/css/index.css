@@ -1,89 +1,62 @@
-:root{
-    --blue : rgb(32, 32, 124);
-    --hoveredBlue : rgb(43, 43, 161);
+#card-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - var(--navbarHeight));
+  background-image: linear-gradient(#c4dffd, #fefefe);
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    border-spacing: 0;
-    list-style: none;
-    color: inherit;
-    text-decoration: inherit;
-    font-size: 1.6rem;
-    font-family: "Helvetica", sans-serif;
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2.4rem;
+  background-color: #fefefe;
+  border-radius: 0.4rem;
+  box-shadow: #29292944 4px 4px 8px;
 }
 
-html{
-    font-size: 62.5%;
-    min-height: 100vh;
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
 }
-h1{font-size: 3.2rem}
-h2{font-size: 2.8rem}
-h3{font-size: 2.4rem}
-
-/* ------------------------------------- */
-
-body{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(#c4dffd, #fefefe)
+form label {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--blue);
+}
+form * {
+  padding: 0.4rem;
+  margin: 0.8rem 0;
 }
 
-section{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem 2.4rem;
-    background-color: #fefefe;
-    border-radius: .4rem;
-    box-shadow: #29292944 4px 4px 8px;
+form input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+form input[type="text"] {
+  border: solid 0.5px var(--blue);
 }
 
-form{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    transition: all .3s ease-in-out;
+form input[type="submit"] {
+  background-color: var(--blue);
+  color: #fefefe;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
-    form label{
-        text-align: center;
-        font-size: 2.4rem;
-        color: var(--blue);
-    }
-    form *{
-        padding: .4rem;
-        margin: .8rem 0;
-    }
-
-    form input{
-        padding: .8rem;
-        border: none;
-        border-radius: .2rem;
-    }
-    form input[type="text"]{
-        border: solid .5px var(--blue);
-    }
-
-    form input[type="submit"]{
-        background-color: var(--blue);
-        color: #fefefe;
-        transition: all .2s ease-in-out;
-        cursor: pointer;
-    }
-    form input[type="submit"]:hover{
-        background-color: var(--hoveredBlue);
-    }
+form input[type="submit"]:hover {
+  background-color: var(--hoveredBlue);
+}
 
 section p {
-    font-size: 1.8rem;
-    padding: .4rem;
-    margin: .4rem 0;
-    color: var(--blue);
+  font-size: 1.8rem;
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  color: var(--blue);
 }
