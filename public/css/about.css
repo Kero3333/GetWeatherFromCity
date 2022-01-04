@@ -1,0 +1,31 @@
+section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.333333%;
+    min-height: calc(100vh - var(--navbarHeight));
+    background-color: #fefefe;
+}
+
+article{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 8rem;
+    height: 100%;
+    color: var(--blue);
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+article:hover{
+    background-color: #efefef;
+}
+
+article img{
+    height: 19.2rem;
+    width: 19.2rem;
+    border-radius: 50%;
+}

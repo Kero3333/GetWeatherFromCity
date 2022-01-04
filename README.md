@@ -18,15 +18,16 @@ This program's goal is to give a temperature depending on a given city. It would
 
 ## How it works
 
+- Ne pas oublier d'entrer le nom d'une ville après la commande "npm start", auquel cas le script reverra une erreur.
 - Do not forget to type the name of a city after entering the "npm start" command, or else the program would throw an error.
 - The name of this city must be written in English only.
 - Once the program launched, it would return the temperature of the given city.
 
 ## Authors
 
-- Kévin Robic [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kero3333)
-- Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA)
-- Romain Chenais [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naorimsenchai)
+* Kévin Robic [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kero3333) 
+* Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA)
+* Romain Chenais [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naorimsenchai)
 
 ## Sources
 
@@ -59,9 +60,9 @@ Ce programme a pour objectif de donner une température en fonction d'une ville 
 
 ## Auteurs
 
-- Kévin Robic [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kero3333)
-- Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA)
-- Romain Chenais [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naorimsenchai)
+* Kévin Robic [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kero3333) 
+* Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA)
+* Romain Chenais [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naorimsenchai)
 
 ## Sources
 

@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Weather From City</title>
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
-  <body id="body">
+  <body>
     <header><%- include("_navbar") -%></header>
     <section id="card-container">
       <div class="card">
         <form method="post">
           <label for="city" class="col-sm-2 col-form-label">Enter a city</label>
           <input id="city" type="text" class="form-control" name="city" />
-          <input id="submit" type="submit" class="btn btn-primary" value="Send" />
+          <input
+            id="submit"
+            type="submit"
+            class="btn btn-primary"
+            value="Send"
+          />
         </form>
-        <p><%= temp %></p>
+        <% if (locals.info) { %>
+          <p>the temperature of <%= info.city %> is <%= info.temp %>°C</p>
+      <% } %></p>
       </div>
     </section>
   </body>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
   <script>
     VANTA.CLOUDS({
-      el: "#body",
+      el: "#card-container",
       mouseControls: false,
       touchControls: false,
       gyroControls: false,
       minHeight: 200.0,
       minWidth: 200.0,
     });
-  </script> -->
+  </script>
   <script src="js/index.js"></script>
 </html>
