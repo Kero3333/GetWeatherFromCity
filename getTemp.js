@@ -12,7 +12,6 @@ const getTemp = async (latt, long, city) => {
     const tempC = Math.floor(temp - 273.15);
     return tempC;
   } catch (err) {
-    console.log(err.message + " openweathermap API");
     return { error: err.message };
   }
 };

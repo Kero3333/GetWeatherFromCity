@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--blue);
+    padding: 2.4rem 0;
+}
+
+footer .info-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+footer .info-container {
+    color: #fefefe;
+}
+footer .info-container ul{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+footer .icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .icon-container img {
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    margin: .8rem;
+}

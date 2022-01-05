@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
     <title>Get Weather From City</title>
 
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <header><%- include("_navbar") -%></header>
@@ -25,12 +27,13 @@
           />
         </form>
         <% if (locals.info) { %>
-          <p>the temperature of <%= info.city %> is <%= info.temp %>°C</p>
-      <% } %></p>
+          <p>The temperature of <%= info.city %> is <%= info.temp %>°C</p>
+        <% } %>
       </div>
     </section>
+    <%- include("_footer") -%>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
   <script>
     VANTA.CLOUDS({
@@ -41,6 +44,6 @@
       minHeight: 200.0,
       minWidth: 200.0,
     });
-  </script>
+  </script> -->
   <script src="js/index.js"></script>
 </html>

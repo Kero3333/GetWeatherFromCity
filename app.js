@@ -17,16 +17,14 @@ app.use(express.static(__dirname + "/public"));
 
 app.post("/", async (req, res) => {
   const city = req.body.city;
-  console.log(req.body);
   try {
     const temp = await getCoordinate(city);
-    console.log(temp);
     if (temp.error) {
-      res.render("index", { info: `${temp.error}` });
+      res.render("index", { error: { city: city } });
+    } else {
+      res.render("index", { info: { city: city, temp: temp } });
     }
-    res.render("index", { info: { city: city, temp: temp } });
   } catch (error) {
-    console.log(error);
     res.render("index", { error });
   }
 });
@@ -38,11 +36,10 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 app.get("/contact", (req, res) => {
-  res.render("contact", { msg: "" });
+  res.render("contact");
 });
 
-app.post("/contact", async (req, res) => {
-  console.log(req.body);
+app.post("/contact", (req, res) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -60,11 +57,9 @@ app.post("/contact", async (req, res) => {
 
   transporter.sendMail(mailOpts, (err, response) => {
     if (err) {
-      console.log(err.message);
-      res.render("contact", {});
+      res.render("contact", { error: true });
     } else {
-      const alertMsg = "message as send";
-      res.render("contact", { msg: 0 });
+      res.render("contact", { error: false });
     }
   });
 });

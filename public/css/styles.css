@@ -1,6 +1,7 @@
 :root {
-	--navbarHeight: 64px;
+	--navbarHeight: 4.8rem;
 	
+	--white: #fefefe;
 	--blue: rgb(32, 32, 124);
 	--hoveredBlue: rgb(43, 43, 161);
 }
@@ -13,7 +14,7 @@
 	color: inherit;
 	text-decoration: inherit;
 	font-size: 1.6rem;
-	font-family: "Helvetica", sans-serif;
+	font-family: "Poppins", "Helvetica", sans-serif;
 }
 
 html {
@@ -21,5 +22,8 @@ html {
 	min-height: 100vh;
 }
 h1 {font-size: 3.2rem;}
-h2 {font-size: 2.8rem;}
-h3 {font-size: 2.4rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 1.872rem;}
+h4 {font-size: 1.6rem;}
+h5 {font-size: 1.328rem;}
+h6 {font-size: 1.2rem;}
