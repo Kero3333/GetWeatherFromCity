@@ -4,24 +4,23 @@
 
 ## Description
 
-This program's goal is to give a temperature depending on a given city. It would fetch in the [Geocode](https://geocode.xyz/api) API the city's lattitude and longitude and uses it as an entry to fetch the temperature in Kelvin through the [OpenWeatherMap](https://openweathermap.org/api) API in order to convert it in Celsius afterwards.
+This website goal is to give a temperature depending on a given city. It would fetch in the [OpenWeatherMap/geo](https://openweathermap.org/api) API the city's lattitude and longitude and uses it as an entry to fetch the temperature in Kelvin through the [OpenWeatherMap/weather](https://openweathermap.org/api) API in order to convert it in Celsius afterwards.
 
 ## Required
 
 1. Install NodeJS
-2. Execute the command "npm init -y"
-3. Execute the command "npm i axios"
+2. Execute the command "npm i"
+3. Execute the command "npm start"
+4. Go to the link http://localhost:3000
 
 ## Launching
 
-- Execute the command "npm start (city_name)"
+- Write the name of the city.
 
 ## How it works
 
-- Ne pas oublier d'entrer le nom d'une ville après la commande "npm start", auquel cas le script reverra une erreur.
-- Do not forget to type the name of a city after entering the "npm start" command, or else the program would throw an error.
-- The name of this city must be written in English only.
-- Once the program launched, it would return the temperature of the given city.
+
+- Once the button send is executed, it would return the temperature of the given city.
 
 ## Authors
 
@@ -31,7 +30,6 @@ This program's goal is to give a temperature depending on a given city. It would
 
 ## Sources
 
-- [Geocode](https://geocode.xyz/api)
 - [OpenWeatherMap](https://openweathermap.org/api)
 
 ---
@@ -40,23 +38,22 @@ This program's goal is to give a temperature depending on a given city. It would
 
 ## Description
 
-Ce programme a pour objectif de donner une température en fonction d'une ville donnée. Ce dernier va chercher dans l'API [Geocode](https://geocode.xyz/api) la lattitude et la longitude de la ville puis l'utilise en entrée afin de récupérer la température en degré Kelvin via l'API [OpenWeatherMap](https://openweathermap.org/api) dans le but de la convertir en Celsius par la suite.
+Ce site a pour objectif de donner une température en fonction d'une ville donnée. Ce dernier va chercher dans l'API [OpenWeatherMap/geo](https://openweathermap.org/api) la lattitude et la longitude de la ville puis l'utilise en entrée afin de récupérer la température en degré Kelvin via l'API [OpenWeatherMap/weather](https://openweathermap.org/api) dans le but de la convertir en Celsius par la suite.
 
-## Prérequis
+## Prérequis pour lancer le site en local
 
-1. Installer NodeJS
-2. Éxécuter la commande "npm init -y"
-3. Éxécuter la commande "npm i axios"
+1. Installer nodeJs
+2. Lancer la commmande npm i
+3. Lancer la commande npm start
+4. Allez sur le lien http://localhost:3000
 
 ## Démarrage
 
-- Éxécuter la commande "npm start (nom_de_la_ville)"
+- Entrer le nom de la ville.
 
 ## Fonctionnement
 
-- Ne pas oublier d'entrer le nom d'une ville après la commande "npm start", auquel cas le script reverra une erreur.
-- Le nom de cette même ville doit également être écrit en anglais.
-- Une fois le programme lancé, il donne la température de la ville donnée.
+- Une fois le bouton send executé, il donne la température de la ville donnée.
 
 ## Auteurs
 
@@ -66,5 +63,4 @@ Ce programme a pour objectif de donner une température en fonction d'une ville 
 
 ## Sources
 
-- [Geocode](https://geocode.xyz/api)
 - [OpenWeatherMap](https://openweathermap.org/api)
